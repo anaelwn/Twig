@@ -1,10 +1,10 @@
 {% extends 'layout.html.twig' %}
-<!doctype html>
+{% block content %}
 <html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% block title %}
+{% block title %}
 
     {{ parent() }} - Accueil
 
@@ -17,3 +17,4 @@
     <h1>Hello {{ name }} !</h1>
 </body>
 </html>
+{% endblock %}
